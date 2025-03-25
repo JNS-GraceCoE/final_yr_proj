@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">    
+            <a href="index.html">
+                <img src="logo.png" alt="Logo" height="40">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li class="dropdown">
+                <a href="internship.html">Internships &#9662;</a>
+                <ul class="dropdown-menu">
+                    <li><a href="internship.html">Internship Listings</a></li>
+                    <li><a href="#">Top Companies</a></li>
+                    <li><a href="#">Work from Home</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="course.html">Courses &#9662;</a>
+                <ul class="dropdown-menu">
+                    <li><a href="course.html">All Courses</a></li>
+                    <li><a href="#">Tech Courses</a></li>
+                    <li><a href="#">Business Courses</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="job.html">Jobs &#9662;</a>
+                <ul class="dropdown-menu">
+                    <li><a href="job.html">Job Listings</a></li>
+                    <li><a href="#">Fresher Jobs</a></li>
+                    <li><a href="#">Remote Jobs</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Login/Register &#9662;</a>
+                <ul class="dropdown-menu">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="filters">
+            <h3>Filters</h3>
+            <h4>Profile</h4>
+            <input type="text" placeholder="e.g: Marketing" id="profileSearch">
+            <h4>Location</h4>
+            <input type="text" placeholder="e.g: Tamil Nadu" id="locationSearch">
+            
+            <div class="filter-options">
+                <label><input type="checkbox" id="remote"> Remote</label>
+                <label><input type="checkbox" id="hybrid"> Hybrid</label>
+                <label><input type="checkbox" id="onsite"> Onsite</label>
+            </div>
+            <h4>Salary Range (LPA)</h4>
+            <div class="salary-filter">
+                <input type="range" id="minSalary" min="0" max="20" step="0.5" value="0">
+                <input type="range" id="maxSalary" min="0" max="20" step="0.5" value="20">
+                <div class="salary-values">
+                    <span id="minSalaryValue">0 LPA</span> - 
+                    <span id="maxSalaryValue">20 LPA</span>
+                </div>
+            </div>
+            <span class="clear-option" id="clearFilters">Clear All</span>
+
+            <h3>Keyword Search</h3>
+            <div class="search-container">
+                <input type="text" id="searchJob" placeholder="e.g. Design, Mumbai, Infosys">
+                <button id="searchButton">&#128269;</button>
+            </div>
+        </div>        
+        <main class="job-listings">
+            <h2 id="jobCount"></h2>
+            <div id="jobsContainer">
+                <div class="job">
+                    <h3>Operations Executive</h3>
+                    <p>DARIUS BUSINESS SOLUTIONS INDIA LLP</p>
+                    <p>Secunderabad, Hyderabad</p>
+                    <p>1 year(s) | ₹2,00,000 - 3,00,000</p>
+                    <p>2 weeks ago</p>
+                </div>
+            </div>
+            <div id="jobsContainer">
+                <div class="job">
+                    <h3>Software Engineer</h3>
+                    <p>OUTLIER</p>
+                    <p>India</p>
+                    <p>1 year(s) | ₹3,00,000 - 4,00,000</p>
+                    <p>Remote</p>
+                    <p>2 weeks ago</p>
+                </div>
+            </div>
+            <div id="jobsContainer">
+                <div class="job">
+                    <h3>Malware Analyst</h3>
+                    <p>ZOHO</p>
+                    <p>Coimbatore, Tamilnadu</p>
+                    <p>1 year(s) | ₹5,00,000 - 6,00,000</p>
+                    <p>Onsite</p>
+                    <p>2 weeks ago</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="script1.js"></script>
+</body>
+</html>
+

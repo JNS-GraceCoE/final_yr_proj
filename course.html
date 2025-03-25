@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: #0881b9;
+        }
+        img{
+            width: 80px;
+            height: 60px; 
+            object-fit: contain;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .search-bar select,
+        .search-bar input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .course-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .course-card {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            background: #cce5ff;
+            text-align: center;
+        }
+
+        .course-card button {
+            margin-top: 10px;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            background: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" id="logo"/>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="internship.html">Internships</a></li>
+                <li><a href="job.html">Jobs</a></li>
+                <li><a href="course.html">Courses</a></li>
+            </ul>
+        </nav>
+        <section class="search-bar">
+            <select  id="courseSelect">
+                <option value="">Select course</option>
+                <option value="web-development">Web Development</option>
+                <option value="data-science">Data Science</option>
+                <option value="digital-marketing">Digital Marketing</option>
+                <option value="Programming in C">Programming in C</option>
+                <option value="Cyber Security">Cyber Security</option>
+                <option value="Artificial Intelligence">Artificial Intelligence</option>
+                <option value="Java">Java</option>
+                <option value="Programming in c++">Programming in c++</option>
+                <option value="uI/UX">UI/UX</option>
+                <option value="Advanced Excel">Advanced Excel</option>
+                <option value="Python">Python</option>
+                <option value="Machine Learning">Machine Learning</option>
+                <option value="AWS">AWS</option>
+                <option value="WordPress">WordPress</option>
+                <option value="Animation">Animation</option>
+                <option value="Video Editing">Video Editing</option>
+                <option value="Algorithms">Algorithms</option>
+                <option value="R">R</option>
+                <option value="ASP">ASP</option>
+                <option value="AR/VR">AR/VR</option>
+                <option value="Android App Development">Android App Development</option>
+                <option value="DataStructure">DataStructure</option>
+                <option value="AutoCAD">AutoCAD</option>
+                <option value="IOT">IOT</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+
+
+
+            <select>
+                <option value="">Select Discipline</option>
+                <option value="BE/CSE">BE/CSE</option>
+                <option value="BE/ECE">BE/ECE</option>
+                <option value="BE/EEE">BE/EEE</option>
+                <option value="BE/MECH">BE/MECH</option>
+                <option value=""></option>
+            </select>
+            <input type="text" placeholder="Search for courses...">
+        </section>
+</header>
+        <section class="course-container">
+            <div class="course-card">
+                <img src="web.png" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                    class="img-responsive">
+                <h3>Web Development</h3>
+                <a href="web-development.html" target="_blank">View More</a>
+            </div>
+            <div class="course-card">
+                <img src="datascience.jpg" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                    class="img-responsive">
+                <h3>Data Science</h3>
+                <a href="datascience.html" target="_blank">View More</a>
+            </div>
+            <div class="course-card">
+                <img src="DM1 (2).jpg" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                    class="img-responsive">
+                <h3>Digital Marketing</h3>
+                <button>
+                 <a href="dm.html" target="_blank">View More</a>
+                </button>
+            </div>
+            <div class="course-card">
+                <img src="c image.jpg" style="height:200px ;width: 300px;border-radius: 10%;" alt="null"
+                    class="img-responsive">
+                <h3>Programming in C</h3>
+                <button onclick="alert('Course details coming soon!')">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="cyber.png" style="height:200px ;width: 300px;border-radius: 10%;" alt="null"
+                    class="img-responsive">
+                <h3>Cyber Security</h3>
+                <button onclick="alert('Course details coming soon!')">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="Ai.jpg" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                    class="img-responsive">
+                <h3>Artificial Intelligence</h3>
+                <button onclick="alert('Course details coming soon!')">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="javalogo.png" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                    class="img-responsive">
+                <h3>Java</h3>
+                <button onclick="alert('Course details coming soon!')">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="prog C++.jpg" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                    class="img-responsive">
+                <h3>Programming in c++</h3>
+                <button onclick="alert('Course details coming soon!')">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="uiux.jpg" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                    class="img-responsive">
+                <h3>UI/UX Design</h3>
+                <button onclick="alert('Course details coming soon!')">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="excel.png" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                    class="img-responsive">
+                <h3>Advanced Excel</h3>
+                <button onclick="alert('Course details coming soon!')">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="python.webp" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                    class="img-responsive">
+                <h3>Python</h3>
+                <button onclick="alert('Course details coming soon!')">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="ML.jpg" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                    class="img-responsive">
+                <h3>Machine Learning</h3>
+                <button onclick="alert('Course details coming soon!')">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="aws.png" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                    class="img-responsive">
+                <h3>AWS</h3>
+                <button onclick="alert('Course details coming soon!')">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="Wpress.jpg" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                    class="img-responsive">
+                <h3>WordPress</h3>
+                <button onclick="alert('Course details coming soon!')">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="ANIME.png" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                    class="img-responsive">
+                <h3>Animation</h3>
+                <button onclick="alert('Course details coming soon!')">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="videdit.jpg" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                    class="img-responsive">
+                <h3>Video Editing</h3>
+                <button onclick="alert('Course details coming soon!')">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="alg.jpg" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                    class="img-responsive">
+                <h3>Algorithms</h3>
+                <button onclick="alert('Course details coming soon!')">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="Rprog.png" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                    class="img-responsive">
+                <h3>R</h3>
+                <button onclick="alert('Course details coming soon!')">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="ASP.jpg" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                    class="img-responsive">
+                <h3>ASP</h3>
+                <button onclick="alert('Course details coming soon!')">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="ARVR.png" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                    class="img-responsive">
+                <h3>AR/VR</h3>
+                <button onclick="alert('Course details coming soon!')">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="android.jpg" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                    class="img-responsive">
+                <h3>Android App Development</h3>
+                <button onclick="alert('Course details coming soon!')">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="Datastr.jpg" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                    class="img-responsive">
+                <h3>Data Structures</h3>
+                <button onclick="alert('Course details coming soon!')">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="ACAD.png" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                    class="img-responsive">
+                <h3>AutoCAD</h3>
+                <button onclick="alert('Course details coming soon!')">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="iot.jpg" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                    class="img-responsive">
+                <h3>IOT</h3>
+                <button onclick="alert('Course details coming soon!')">Enroll Now</button>
+            </div>
+        </section>
+        <script>
+            document.getElementById("courseSelect").addEventListener("change", function() {
+                let selectedValue = this.value;
+                if (selectedValue) {
+                    window.location.href = selectedValue + ".html"; // Redirect based on selection
+                }
+            });
+        </script>
+</body>
+
+</html>

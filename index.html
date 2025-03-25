@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace PMS - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <!-- Clickable Logo -->
+        <a href="index.html">
+            <img src="logo.png" id="logo" alt="Company Logo"/>
+        </a>
+
+        <!-- Main Navigation -->
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="internship.html" class="main-link">Internships &#9662;</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="web-development.html">Web Development</a></li>
+                        <li><a href="datascience.html">Data Science</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="job.html" class="main-link">Jobs &#9662;</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">IT</a></li>
+                        <li><a href="#">Marketing</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="course.html" class="main-link">Courses &#9662;</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Programming</a></li>
+                        <li><a href="#">Machine Learning</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>        
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+
+        <!-- Sign In & Sign Up Dropdown -->
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Sign In &#9662;</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Candidate</a></li>
+                        <li><a href="#">Employee</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Sign Up &#9662;</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Candidate</a></li>
+                        <li><a href="#">Employee</a></li>
+                    </ul>
+                </li>
+            </ul>   
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Make your dream career a reality</h1>
+    </section>
+    
+    <section class="cards">
+        <div class="card blue">
+            <span class="tag">Placement Guaranteed Courses</span>
+            <h3>Online Courses with Guaranteed Placement</h3>
+            <button onclick="alert('More details coming soon!')">Know More</button>
+        </div>
+        <div class="card lightblue">
+            <span class="tag">Certification Courses</span>
+            <h3>Special offer for students pursuing your degree!</h3>
+            <button onclick="alert('Offer details will be available soon!')">Know More</button>
+        </div>
+        <div class="card yellow">
+            <span class="tag">Internship Courses</span>
+            <h3>PART-TIME POCKET MONEY INTERNSHIPS</h3>
+            <button onclick="alert('Start your internship journey now!')">Know More</button>
+        </div>
+    </section>
+    <div class="container">
+        <h2>Latest internships on Grace PMS</h2>
+    
+        <!-- Popular Categories -->
+        <div class="categories">
+            <button class="category-btn">Big brands</button>
+            <button class="category-btn">Work from home</button>
+            <button class="category-btn">Part-time</button>
+            <button class="category-btn">MBA</button>
+            <button class="category-btn">Engineering</button>
+            <button class="category-btn">Media</button>
+            <button class="category-btn">Design</button>
+            <button class="category-btn">Data Science</button>
+        </div>
+    
+        <!-- Internship Slider -->
+        <div class="slider-wrapper">
+            <button class="slide-btn prev-btn" >&#10094;</button>
+            <div class="slider" id="internship-slider">
+                <div class="internship-box">
+                    <span class="hiring">Actively hiring</span>
+                    <h3>Customer Service/Customer Support</h3>
+                    <p>AECC Global</p>
+                    <p>📍 Gurgaon</p>
+                    <p>💰 ₹15,000/month</p>
+                    <p>📅 6 Months</p>
+                    <button class="internship-btn">Internship</button>
+                    <a href="#" class="details-btn">View details →</a>
+                </div>
+                <div class="internship-box">
+                    <span class="hiring">Actively hiring</span>
+                    <h3>Content Writer And Social Media</h3>
+                    <p>603 The CoWorking Space India</p>
+                    <p>📍 Mumbai</p>
+                    <p>💰 ₹10,000/month</p>
+                    <p>📅 3 Months</p>
+                    <button class="internship-btn">Internship</button>
+                    <a href="#" class="details-btn">View details →</a>
+                </div>
+                <div class="internship-box">
+                    <span class="hiring">Actively hiring</span>
+                    <h3>Travel Consultant</h3>
+                    <p>Thomas Cook</p>
+                    <p>📍 Hyderabad</p>
+                    <p>💰 ₹5,000/month</p>
+                    <p>📅 6 Months</p>
+                    <button class="internship-btn">Internship</button>
+                    <a href="#" class="details-btn">View details →</a>
+                </div>
+                <div class="internship-box">
+                    <span class="hiring">Actively hiring</span>
+                    <h3>Content Writing</h3>
+                    <p>Physics Wallah</p>
+                    <p>📍 Bangalore</p>
+                    <p>💰 ₹25,000/month</p>
+                    <p>📅 6 Months</p>
+                    <button class="internship-btn">Internship</button>
+                    <a href="#" class="details-btn">View details →</a>
+                </div>
+                <div class="internship-box">
+                    <span class="hiring">Actively hiring</span>
+                    <h3>Travel Consultant</h3>
+                    <p>Thomas Cook</p>
+                    <p>📍 Hyderabad</p>
+                    <p>💰 ₹5,000/month</p>
+                    <p>📅 6 Months</p>
+                    <button class="internship-btn">Internship</button>
+                    <a href="#" class="details-btn">View details →</a>
+                </div>
+                <div class="internship-box">
+                    <span class="hiring">Actively hiring</span>
+                    <h3>Travel Consultant</h3>
+                    <p>Thomas Cook</p>
+                    <p>📍 Hyderabad</p>
+                    <p>💰 ₹5,000/month</p>
+                    <p>📅 6 Months</p>
+                    <button class="internship-btn">Internship</button>
+                    <a href="#" class="details-btn">View details →</a>
+                </div>
+            </div>
+            <button class="slide-btn next-btn">&#10095;</button>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Latest Jobs on Grace PMS</h2>
+    
+        <!-- Popular Categories -->
+        <div class="categories">
+            <button class="category-btn">Big brands</button>
+            <button class="category-btn">Work from home</button>
+            <button class="category-btn">Part-time</button>
+            <button class="category-btn">MBA</button>
+            <button class="category-btn">Engineering</button>
+            <button class="category-btn">Media</button>
+            <button class="category-btn">Design</button>
+            <button class="category-btn">Data Science</button>
+        </div>
+    
+        <!-- job Slider -->
+        <div class="slider-wrapper">
+            <button class="slide-btn prev-btn">&#10094;</button>
+            <div class="slider" id="job-slider">
+                <div class="job-box">
+                    <span class="hiring">Actively hiring</span>
+                    <h3>Customer Service/Customer Support</h3>
+                    <p>AECC Global</p>
+                    <p>📍 Gurgaon</p>
+                    <p>💰 ₹15,000/month</p>
+                    <p>📅 6 Months</p>
+                    <button class="job-btn">Internship</button>
+                    <a href="#" class="details-btn">View details →</a>
+                </div>
+                <div class="job-box">
+                    <span class="hiring">Actively hiring</span>
+                    <h3>Content Writer And Social Media</h3>
+                    <p>603 The CoWorking Space India</p>
+                    <p>📍 Mumbai</p>
+                    <p>💰 ₹10,000/month</p>
+                    <p>📅 3 Months</p>
+                    <button class="job-btn">Internship</button>
+                    <a href="#" class="details-btn">View details →</a>
+                </div>
+                <div class="job-box">
+                    <span class="hiring">Actively hiring</span>
+                    <h3>Travel Consultant</h3>
+                    <p>Thomas Cook</p>
+                    <p>📍 Hyderabad</p>
+                    <p>💰 ₹5,000/month</p>
+                    <p>📅 6 Months</p>
+                    <button class="job-btn">Internship</button>
+                    <a href="#" class="details-btn">View details →</a>
+                </div>
+                <div class="job-box">
+                    <span class="hiring">Actively hiring</span>
+                    <h3>Content Writing</h3>
+                    <p>Physics Wallah</p>
+                    <p>📍 Bangalore</p>
+                    <p>💰 ₹25,000/month</p>
+                    <p>📅 6 Months</p>
+                    <button class="job-btn">Internship</button>
+                    <a href="#" class="details-btn">View details →</a>
+                </div>
+                <div class="job-box">
+                    <span class="hiring">Actively hiring</span>
+                    <h3>Travel Consultant</h3>
+                    <p>Thomas Cook</p>
+                    <p>📍 Hyderabad</p>
+                    <p>💰 ₹5,000/month</p>
+                    <p>📅 6 Months</p>
+                    <button class="job-btn">Internship</button>
+                    <a href="#" class="details-btn">View details →</a>
+                </div>
+                <div class="job-box">
+                    <span class="hiring">Actively hiring</span>
+                    <h3>Travel Consultant</h3>
+                    <p>Thomas Cook</p>
+                    <p>📍 Hyderabad</p>
+                    <p>💰 ₹5,000/month</p>
+                    <p>📅 6 Months</p>
+                    <button class="job-btn">Internship</button>
+                    <a href="#" class="details-btn">View details →</a>
+                </div>
+            </div>
+            <button class="slide-btn next-btn">&#10095;</button>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Latest course on Grace PMS</h2>
+    
+        <!-- Popular Categories -->
+        <div class="categories">
+            <button class="category-btn">Big brands</button>
+            <button class="category-btn">Work from home</button>
+            <button class="category-btn">Part-time</button>
+            <button class="category-btn">MBA</button>
+            <button class="category-btn">Engineering</button>
+            <button class="category-btn">Media</button>
+            <button class="category-btn">Design</button>
+            <button class="category-btn">Data Science</button>
+        </div>
+        <div class="slider-wrapper">
+            <button class="slide-btn prev-btn">&#10094;</button>
+            <div class="slider" id="course-slider">
+                <div class="course-box">
+                    <img src="datascience.jpg" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                        class="img-responsive">
+                    <h3>Data Science</h3>
+                    <button class="course-btn">Internship</button>
+                <a href="#" class="details-btn">View details →</a>
+                </div>
+                <div class="course-box">
+                    <img src="AI and ML.jpg" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                        class="img-responsive">
+                    <h3>AI and ML</h3>
+                    <button class="course-btn">Internship</button>
+                <a href="#" class="details-btn">View details →</a>
+                </div>
+                <div class="course-box">
+                    <img src="python.webp" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                        class="img-responsive">
+                    <h3>python</h3>
+                    <button class="course-btn">Internship</button>
+                    <a href="#" class="details-btn">View details →</a>
+                </div>
+                <div class="course-box">
+                    <img src="java.png" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                        class="img-responsive">
+                    <h3>java</h3>
+                    <button class="course-btn">Internship</button>
+                <a href="#" class="details-btn">View details →</a>
+                </div>
+                <div class="course-box">
+                    <img src="UI and UX.jpg" style="height:150px ;width: 250px;border-radius: 10%;" alt="null"
+                        class="img-responsive">
+                    <h3>UI and UX</h3>
+                    <button class="course-btn">Internship</button>
+                    <a href="#" class="details-btn">View details →</a>
+                </div>
+            </div>
+            <button class="slide-btn next-btn">&#10095;</button>
+        </div>
+    </div>  
+ </body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Internships</title>
+    <style>
+        :root{
+            --color-primary:#0073ff6c;
+            --color-black:white;
+            }
+            *{
+                margin: 0;
+                padding:0;
+                box-sizing: border-box;
+            }
+        body {
+            font-family: sans-serif;
+             }
+        .nav-bar {
+            background-color:white;
+            height: 80px;
+            padding: 0 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+         .logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+        img {
+            width: 80px;
+            height: 60px;
+            object-fit: contain;
+        }
+        .nav-bar ul  {
+            list-style: none;
+            display: flex;
+        }
+        .nav-bar ul li{
+            padding: 10px 30px;
+            position: relative;
+        }
+        .nav-bar  ul li a {
+            color:var(--color-white);
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s;
+        }
+        .nav-bar ul li a:hover {
+            color:var(--color-primary);
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: var(--color-black);
+            top: 100%;
+            left: 0;
+            min-width: 200px;
+            z-index: 1000;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+        }
+        .dropdown-menu a {
+            display: block;
+            padding: 10px;
+            color: var(--color-white);
+        }
+        .nav-bar ul li:hover .dropdown-menu {
+            display: block;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+        .filter-container {
+            width: 300px;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+        }
+        .internship-list {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+            background: #f8f8f8;
+            width: 100%;
+        }
+        .filter-container {
+            width: 300px;
+            padding: 20px;
+            background: white;
+            height: auto;
+            overflow-y: auto;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 50px;
+        }
+        .internship-list {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        input, select, label {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        .internship {
+            border: 1px solid #ccc;
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        .clear-btn {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .clear-btn:hover {
+            background-color: #cc0000;
+        }
+        .search-bar {
+            width: 100%;
+            display: flex;
+            margin-top: 20px;
+        }
+        .search-bar input {
+            flex-grow: 1;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        .search-bar button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .search-bar button:hover {
+            background-color: #0056b3;
+        }
+        .filter-container label {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .filter-container input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        .nav-bar ul li:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+    <script>
+        function clearFilters() {
+            document.getElementById("profile").value = "";
+            document.getElementById("location").value = "";
+            document.getElementById("workFromHome").checked = false;
+            document.getElementById("partTime").checked = false;
+            document.getElementById("stipend").value = "0";
+            document.getElementById("stipendValue").innerText = "0";
+            document.getElementById("duration").value = "";
+            document.getElementById("startingFrom").value = "";
+            document.getElementById("jobOffer").checked = false;
+            document.getElementById("fastResponse").checked = false;
+            document.getElementById("earlyApplicant").checked = false;
+            document.getElementById("womenInternships").checked = false;
+        }
+    </script>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="logo">    
+            <a href="index.html">
+                <img src="logo.png" alt="Logo" height="40">
+            </a>
+        </div>
+         <ul>
+            <li><a href="internship.html">Internships <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="#">Top Locations</a>
+                    <a href="#">Profiles</a>
+                    <a href="#">Top Categories</a>
+                    <a href="#">Explore More Internships</a>
+                    <a href="#">Placement Guarantee Courses</a>
+                </div>
+            </li>
+            <li><a href="course.html">Courses <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="#">Tech Courses</a>
+                    <a href="#">Marketing Courses</a>
+                    <a href="#">Business Courses</a>
+                </div>
+            </li>
+            <li><a href="job.html">Jobs <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="#">Fresher Jobs</a>
+                    <a href="#">Work from Home</a>
+                </div>
+            </li>
+            <li><a href="#">Login/Register <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="#"> Register as a student</a>
+                    <a href="#">Register as an employer</a>
+                    <a href="#">Login</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+ <div class="container">
+        <div class="filter-container">
+            <h3>Filters</h3>
+            <input type="text" id="profile" placeholder="Profile (e.g. Marketing)">
+            <input type="text" id="location" placeholder="Location (e.g. Delhi)">
+            <label><input type="checkbox" id="workFromHome"> Work from home</label>
+            <label><input type="checkbox" id="partTime"> Part-time</label>
+            <input type="range" id="stipend" min="0" max="10000" step="1000" value="0">
+            <span>Min Stipend: ₹<span id="stipendValue">0</span></span>
+            <select id="duration">
+                <option value="">Duration</option>
+                <option value="1 Month">1 Month</option>
+                <option value="3 Months">3 Months</option>
+                <option value="6 Months">6 Months</option>
+            </select>
+            <input type="date" id="startingFrom">
+            <label><input type="checkbox" id="jobOffer"> Internship with Job Offer</label>
+            <label><input type="checkbox" id="fastResponse"> Fast Response</label>
+            <label><input type="checkbox" id="earlyApplicant"> Early Applicant</label>
+            <label><input type="checkbox" id="womenInternships"> Internships for Women</label>
+            <button onclick="filterInternships()">Apply Filters</button>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search by category, location, or company name">
+                <button onclick="searchInternships()">Search</button>
+            </div>
+            <button class="clear-btn" onclick="clearFilters()">Clear All</button>
+        </div>
+
+        <div class="internship-list" id="internshipList">
+            <div class="internship" data-profile="Marketing" data-location="Delhi" data-stipend="7000" data-wfh="true" data-part-time="false" data-duration="1 Month" data-starting-from="2025-04-01" data-job-offer="true" data-fast-response="true" data-early-applicant="false" data-women-internships="false">
+                <h4>Social Media Marketing</h4>
+                <p>Location: Delhi</p>
+                <p>Stipend: ₹7000</p>
+                <p>Work from home: Yes</p>
+                <p>Duration: 1 Month</p>
+                <p>Starting From: 1st April 2025</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+    
